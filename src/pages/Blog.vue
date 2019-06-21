@@ -13,15 +13,3 @@ export default {
   }
 }
 </script>
-
-<page-query>
-  query posts {
-    posts: allPost {
-      edges {
-        node {
-          title
-        }
-      }
-    }
-  }
-</page-query>
