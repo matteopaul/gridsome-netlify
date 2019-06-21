@@ -1,7 +1,7 @@
 <template>
   <Layout :title="$page.post.title">
     <h1>Hallo</h1>
-    <div v-html="$page.post.content" />
+    
   </Layout>
 </template>
 

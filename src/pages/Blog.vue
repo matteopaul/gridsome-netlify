@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div v-for="post in $page.posts.edges" class="card">
-      <g-link :to="`blog/${post.node.id}`">
+      <g-link :to="`post/${post.node.id}`">
         <span v-html="post.node.title"/>
         <span> by </span>
         <span v-html="post.node.author" />
