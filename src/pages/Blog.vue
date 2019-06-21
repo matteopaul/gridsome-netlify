@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <!----<div v-for="post in $page.posts.edges">
+    <div v-for="post in $page.posts.edges">
       {{post.node.title}}
-    </div>----->
+    </div>
   </Layout>
 </template>
 
