@@ -13,6 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "Id", name: "id", widget: "number", default: 2, valueType: "int", min: 1, step: 1}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
