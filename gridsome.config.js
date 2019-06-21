@@ -23,6 +23,7 @@ module.exports = {
       options: {
         path: 'posts/*.md',
         typeName: 'Post',
+        route: '/post/:id',
         remark: {
           plugins: [
             // ...local plugins

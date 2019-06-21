@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div v-for="cpost in $page.post.edges" class="card">
-      <g-link :to="cpost.node.id">
+      <g-link :to="cpost.node.path">
         <span v-html="cpost.node.title"/>
         <span> by </span>
         <span v-html="cpost.node.author" />
@@ -26,6 +26,7 @@ export default {
           id
           title
           author
+          path
         }
       }
     }
