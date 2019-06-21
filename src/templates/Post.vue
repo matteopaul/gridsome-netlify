@@ -1,13 +1,12 @@
 <template>
   <Layout :title="$page.post.title">
-    <h1>Hallo</h1>
-    <div v-html="$page.post.content" />
+    <h1>test</h1>
   </Layout>
 </template>
 
 <page-query>
-query Post ($id: String!) {
-  post: post(id: $id) {
+query post ($id: String!) {
+  post: post (id: $id) {
     title
     content
     image

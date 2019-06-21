@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <div v-for="post in $page.posts.edges" class="card">
-      <g-link :to="`post/${post.node.id}`">
-        <span v-html="post.node.title"/>
+    <div v-for="cpost in $page.post.edges" class="card">
+      <g-link :to="cpost.node.id">
+        <span v-html="cpost.node.title"/>
         <span> by </span>
-        <span v-html="post.node.author" />
+        <span v-html="cpost.node.author" />
       </g-link>
     </div>
   </Layout>
@@ -19,8 +19,8 @@ export default {
 </script>
 
 <page-query>
-  query Posts {
-    posts: allPost {
+  query Post {
+    post: allPost {
       edges {
         node {
           id

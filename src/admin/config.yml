@@ -7,13 +7,13 @@ media_folder: "./static/uploads"
 public_folder: "uploads"
 
 collections:
-  - name: "post"
+  - name: "Post "
     label: "Post"
     folder: "posts"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Id", name: "id", widget: "number", default: 2, valueType: "int", min: 1, step: 1}
+      - {label: "Id", name: "id", widget: "number", default: 2, valueType: "string", min: 1, step: 1, max: 100}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
