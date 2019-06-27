@@ -7,7 +7,7 @@ media_folder: "./static/uploads"
 public_folder: "uploads"
 
 collections:
-  - name: "Post "
+  - name: "Post"
     label: "Post"
     folder: "posts"
     create: true
@@ -17,3 +17,41 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Image", name: "image", widget: "file", required: false}
+  - label: "Apartment"
+    name: "apartment"
+    folder: "apartments"
+    create: true
+    identifier_field: street
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - name: "street"
+        label: "Street"
+        widget: "string"
+      - name: "rooms"
+        label: "Rooms"
+        widget: "object"
+        fields:
+          - name: "bedroom"
+            label: "Bedroom"
+            widget: "list"
+            fields:
+              - {label: "Beds", name: "beds", widget: "number"}
+              - {label: "Condition", name: "condition", widget: "select", options: ["new", "good", "moderate"]}
+          - name: "bathroom"
+            label: "Bathroom"
+            widget: "list"
+            fields:
+              - {label: "Toilets", name: "toilets", widget: "number"}
+              - {label: "Condition", name: "condition", widget: "select", options: ["new", "good", "moderate"]}
+          - name: "kitchen"
+            label: "Kitchen"
+            widget: "list"
+            fields:
+              - {label: "Cooker", name: "cooker", widget: "boolean"}
+              - {label: "Fridge", name: "fridge", widget: "boolean"}
+              - {label: "Dishwasher", name: "dishwasher", widget: "boolean"}
+              - {label: "Coffee Machine", name: "coffee_machine", widget: "boolean"}
+              - {label: "Microwave", name: "microwave", widget: "boolean"}
+              - {label: "Dishes", name: "dishes", widget: "boolean"}
+              - {label: "Freezer", name: "freezer", widget: "boolean"}
+              - {label: "Condition", name: "condition", widget: "select", options: ["new", "good", "moderate"]}

@@ -1,6 +1,8 @@
 <template>
-  <Layout :title="$page.post.id">
-    <h1>test</h1>
+  <Layout :title="$page.post.title">
+    <h1>{{$page.post.title}}</h1>
+    <p>{{$page.post.content}}</p>
+    <g-image v-if="hasImage" :src="this.$page.post.image"/>
   </Layout>
 </template>
 
@@ -10,7 +12,7 @@ query post ($id: String!) {
     id
     title
     content
-    
+    image
   }
 }
 </page-query>
@@ -24,8 +26,19 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.post.id
+      title: this.$page.post.title
+    }
+  },
+  computed: {
+    hasImage() {
+      return this.$page.post.image != null;
     }
   }
 }
 </script>
+
+<style media="screen">
+  .g-image {
+    width: 100%;
+  }
+</style>
