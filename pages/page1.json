@@ -1,11 +1,36 @@
 {
   "id": "lskfjlskj",
   "title": "Hallo",
-  "imageContent": {
-    "title": "osjfskj",
-    "src": "sadad"
-  },
-  "textContent": {
-    "content": "adjhpaihdpsjhfpaijh"
-  }
+  "contents": [
+      {
+        "type": "imageContentType",
+        "title": "xvxvcxcv",
+        "src": "nnnnn"
+
+      },
+      {
+        "type": "textContentType",
+        "title": "dfgdfg",
+        "content": "ddddd",
+        "author": "nklkdsj"
+      },
+      {
+        "type": "imageContentType",
+        "title": "sdfsdf",
+        "content": "ffffff",
+        "author": "kkkkdkdkdkkd"
+      },
+      {
+        "type": "textContentType",
+        "title": "sdfbvcb",
+        "content": "bcbvbcbcbv",
+        "author": "pdfjsdf"
+      },
+      {
+        "type": "textContentType",
+        "title": "hallololo",
+        "content": "123",
+        "author": "jlkjdfsldkfölj"
+      }
+  ]
 }
