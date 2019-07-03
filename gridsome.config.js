@@ -15,15 +15,39 @@ module.exports = {
         // ...global plugins
       ]
     }
-  },
+  }/*,
 
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'posts/*.md',
+        path: 'posts/*.json',
         typeName: 'Post',
         route: '/post/:id',
+        slug: 'slug',
+        remark: {
+          plugins: [
+            // ...local plugins
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        refs: {
+          imageContent: {
+            typeName: "PageStructureImageContent",
+            create: true,
+            path: 'imageContents/*.json',
+            slug: 'slug'
+          }
+        },
+        path: 'pages/*.json',
+        typeName: 'PageStructure',
+        route: '/page/:id',
+        create: true,
+        slug: 'slug',
         remark: {
           plugins: [
             // ...local plugins
@@ -38,5 +62,5 @@ module.exports = {
         modulePath: 'src/admin/index.js'
       }
     },
-  ]
+  ]*/
 }

@@ -2,7 +2,6 @@
   <Layout :title="$page.post.title">
     <h1>{{$page.post.title}}</h1>
     <p>{{$page.post.content}}</p>
-    <g-image v-if="hasImage" :src="this.$page.post.image"/>
   </Layout>
 </template>
 
@@ -11,8 +10,6 @@ query post ($id: String!) {
   post: post (id: $id) {
     id
     title
-    content
-    image
   }
 }
 </page-query>

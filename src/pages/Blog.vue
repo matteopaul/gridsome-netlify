@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<page-query>
+<!---page-query>
   query Post {
     post: allPost {
       edges {
@@ -32,4 +32,4 @@ export default {
     }
   }
 
-</page-query>
+</page-query--->
